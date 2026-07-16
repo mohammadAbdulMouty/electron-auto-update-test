@@ -1,0 +1,20 @@
+{
+  "name": "electron-auto-update-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron .",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "electron-updater": "^6.8.9"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "appId": "com.electron.clinc",
+  "icon": "./desktopIcon.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  },
+  "publish": {
+    "provider": "generic",
+    "url": "https://pub-01c30e3c3b91418caa1e34d4f8ae17fb.r2.dev"
+  }
+}
