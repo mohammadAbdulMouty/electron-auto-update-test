@@ -23,12 +23,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: List dist files
         run: dir dist
-      - name: Install AWS CLI
-        uses: aws-actions/install-aws-cli@v2
       - name: Upload to R2
+        shell: bash
         run: |
           aws s3 sync ./dist s3://my-bucket \
-          --endpoint-url ${{ secrets.R2_ENDPOINT }}
+            --endpoint-url "${{ secrets.R2_ENDPOINT }}"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
