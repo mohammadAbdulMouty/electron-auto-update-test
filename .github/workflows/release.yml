@@ -26,7 +26,7 @@ jobs:
       - name: Upload to R2
         shell: bash
         run: |
-          aws s3 sync ./dist s3://my-bucket \
+          aws s3 sync ./dist s3://clinic \
             --endpoint-url "${{ secrets.R2_ENDPOINT }}"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
