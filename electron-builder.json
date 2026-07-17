@@ -9,7 +9,7 @@
     "category": "Utility"
   },
   "win": {
-    "target": ["portable", "msi"]
+    "target": ["portable", "msi","nsis"]
   },
   "publish": {
     "provider": "generic",
